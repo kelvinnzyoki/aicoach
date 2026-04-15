@@ -1,5 +1,5 @@
-import Input from "../ui/Input";
-import Button from "../ui/Button";
+import Input from "../ui/Input.js";
+import Button from "../ui/Button.js";
 
 export default function ChatInput({ input, setInput, sendMessage }: any) {
   return (
