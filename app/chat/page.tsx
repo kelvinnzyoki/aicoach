@@ -1,9 +1,9 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import ChatBubble from "@/components/chat/ChatBubble";
-import ChatInput from "@/components/chat/ChatInput";
-import { sendMessage } from "@/lib/api";
+import ChatBubble from "@/components/chat/ChatBubble.js";
+import ChatInput from "@/components/chat/ChatInput.js";
+import { sendMessage } from "@/lib/api.js";
 
 export default function ChatPage() {
   const [messages, setMessages] = useState<any[]>([]);
