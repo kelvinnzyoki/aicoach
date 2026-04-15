@@ -16,7 +16,7 @@ export default function Login() {
       body: JSON.stringify({ email, password }),
     });
 
-    window.location.href = "/chat";
+    window.location.href = "chat.tsx";
   };
 
   return (
