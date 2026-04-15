@@ -1,7 +1,7 @@
 // app/page.tsx
 "use client";
 
-import ChatPage from "@/components/chat/ChatPage";
+import ChatPage from "@/app/chat/page.js";
 
 export default function Home() {
   return <ChatPage />;
