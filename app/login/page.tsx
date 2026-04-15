@@ -7,7 +7,7 @@ export default function Login() {
   const [password, setPassword] = useState("");
 
   const login = async () => {
-    await fetch("http://localhost:3000/auth/login", {
+    await fetch("https://fit.cctamcc.site/auth/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -16,7 +16,7 @@ export default function Login() {
       body: JSON.stringify({ email, password }),
     });
 
-    window.location.href = "chat.tsx";
+    window.location.href = "/chat";
   };
 
   return (
