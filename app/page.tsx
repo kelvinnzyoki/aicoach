@@ -1,8 +1,5 @@
-// app/page.tsx
-"use client";
-
-import ChatPage from "@/app/chat/page.tsx";
+import { redirect } from "next/navigation";
 
 export default function Home() {
-  return <ChatPage />;
+  redirect("/chat");
 }
