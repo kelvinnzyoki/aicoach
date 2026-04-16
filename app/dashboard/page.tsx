@@ -1,4 +1,4 @@
-import Card from "@/components/ui/Card.js";
+import Card from "@/components/ui/Card";
 
 export default function Dashboard() {
   return (
