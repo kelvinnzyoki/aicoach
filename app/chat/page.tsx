@@ -26,9 +26,10 @@ export default function ChatPage() {
     try {
       const data = await sendMessage(userMessage.content);
       setMessages([...next, { role: "assistant", content: data.reply }]);
-    } catch (err) {
-      setError("Could not reach the coach. Please try again.");
-    } finally {
+  }catch (err: any) {
+  console.error(err);
+  setError(err.message || "Could not reach the coach. Please try again.");
+  }finally {
       setLoading(false);
     }
   };
