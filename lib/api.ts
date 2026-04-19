@@ -1,7 +1,7 @@
 const API = process.env.NEXT_PUBLIC_API_URL ?? "https://fit.cctamcc.site";
 
 export async function sendMessage(message: string): Promise<{ reply: string }> {
-  const res = await fetch(`${API}/ai/coach`, {
+  const res = await fetch(`${API}/coach`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     credentials: "include",
